@@ -67,7 +67,7 @@ if overs-math.floor(overs)>0.5:
 wickets=st.slider('Enter Wickets Fallen Till Now',0,9)
 runs = st.number_input('Current Team Score',min_value=0,max_value=354,step=1,format='%i')
 runs_last_5=st.number_input('Runs Scored in Last 5 Overs',min_value=0,max_value=runs,step=1,format='%i')
-wickets_last_5=st.slider('Wickets Taken in Last 5 Overs',0,9)
+wickets_last_5=st.number_input('Wickets Taken in Last 5 Overs',min_value=0,max_value=wickets,step=1,format='%d')
 
 if st.sidebar.button('Project Details'):
     st.sidebar.write('Predict the run score of an IPL match using Linear Regression')
