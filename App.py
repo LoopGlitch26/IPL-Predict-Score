@@ -45,18 +45,7 @@ x_test.drop('date',axis=1,inplace=True)
 model=LinearRegression()
 model.fit(x_train,y_train)
 
-st.markdown("<h1 style='text-align: center; color: red;'>IPL Score Predictor (First Innings)</h1>", unsafe_allow_html=True)
- 
-st.markdown('''
-<style>
-body {
-background-image: url("https://cdn.insidesport.co/wp-content/uploads/2021/02/04184843/1-1-9.jpg");
-background-size: cover;
-}
-</style>
-''',unsafe_allow_html=True)
-if st.button('description'):
-    st.write('This is the app you can use to predict the ipl score made by a certain team To make sure the model has good accuracy and some reliability the minium no of overs considered is more than 5 overs')
+st.markdown("<h1 style='text-align: center; color: red;'>IPL 2021 Score Predictor</h1>", unsafe_allow_html=True)
 
 bat_team = st.selectbox('Select Batting Team',('Chennai Super Kings','Delhi Daredevils','Kings XI Punjab','Kolkata Knight Riders','Mumbai Indians','Rajasthan Royals','Royal Challengers Bangalore','Sunrisers Hyderabad'))
 bowl_team = st.selectbox('Select Bowling Team',('Chennai Super Kings','Delhi Daredevils','Kings XI Punjab','Kolkata Knight Riders','Mumbai Indians','Rajasthan Royals','Royal Challengers Bangalore','Sunrisers Hyderabad'))
